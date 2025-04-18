@@ -1,0 +1,14 @@
+name: 𝐃𝐀𝐑𝐊-𝐒𝐇𝐈𝐍𝐑𝐀
+  - name: 𝐃𝐀𝐑𝐊-𝐒𝐇𝐈𝐍𝐑𝐀-service
+    type: web
+    ports:
+      - 5000
+    routes:
+      - path: "/"
+    build:
+      type: docker
+      dockerfile: ./Dockerfile
+    regions:
+      - fra
+      - sin
+      
